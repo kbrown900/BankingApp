@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <script src="app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App</title>
+
+</head>
+  <body>
+  <!-- Placeholder where we will insert our app HTML based on route -->
+    <div id="app">Loading...</div>
+   
+   <!-- Login page template -->
+    <template id="login">
+        <h1>Bank App</h1>
+        <section>
+            <a href="/dashboard" onclick="onLinkClick(event)">Login</a>
+        </section>
+   </template>  
+
+    <!-- Dashboard page template -->
+    <template id="dashboard">
+      <header>
+        <h1>Bank App</h1>
+        <a href="/login" onclick="onLinkClick(event)">Logout</a>
+      </header>
+      <section>
+        Balance: 100$
+      </section>
+      <section>
+        <h2>Transactions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Object</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </template>
+   
+    <template id="credits">
+        <h1>Bank App</h1>
+        <section>
+            <a href="/dashboard" onclick="onLinkClick(event)">Login</a>
+            <p>Made by some people I dont know who.</p>
+        </section>
+    </template>
+
+      <!-- Transaction row template -->
+  <template id="transaction">
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </template>
+
+  </body>
+</html>
